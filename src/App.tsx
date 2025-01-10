@@ -203,7 +203,7 @@ function CredentialCard({ icon, title, description }: { icon: React.ReactNode, t
   );
 }
 
-function FeatureCard({ icon, title, description }) {
+function FeatureCard({ icon, title, description }: { icon: React.ReactNode, title: string, description: string }) {
   return (
     <div className="bg-white p-6 rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
       <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4 text-blue-600">
@@ -215,7 +215,7 @@ function FeatureCard({ icon, title, description }) {
   );
 }
 
-function ProcessStep({ number, title, description }) {
+function ProcessStep({ number, title, description }: { number: string, title: string, description: string }) {
   return (
     <div className="flex items-start gap-4">
       <div className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 font-bold">
